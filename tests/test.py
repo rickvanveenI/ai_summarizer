@@ -17,6 +17,12 @@ def test_summarize_valid():
     assert isinstance(data["summary"], str)
     assert len(data["summary"]) > 0
 
+def test_long_text_summarization():
+    long_text = " ".join(["The quick brown fox jumps over the lazy dog."] * 1000)  # Create a long text by repeating a sentence
+    response = client.post("/summarize", json={"text": long_text})
+    assert response.status_code == 400
+    assert "too long" in response.json()["detail"]
+
 def test_summarize_empty_text():
     response = client.post("/summarize", json={"text": ""})
     assert response.status_code == 400

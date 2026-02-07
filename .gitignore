@@ -1,3 +1,4 @@
 /summ_venv
 __pycache__/
 *.pyc
+.env
