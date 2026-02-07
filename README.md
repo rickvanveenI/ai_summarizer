@@ -2,6 +2,7 @@
 
 A FastAPI-based web application for generating text summaries using advanced AI models. The app exposes a REST API for submitting text and receiving concise summaries.
 
+
 ## Installation
 
 1. **Clone the repository:**
@@ -54,3 +55,16 @@ curl -X POST "http://127.0.0.1:8000/summarize" \
 ---
 
 For more details, see the source files in the `app/` directory.
+
+## Credits
+
+- Built using FastAPI — https://fastapi.tiangolo.com/
+- And Huggingface model — https://huggingface.co/ziaulkarim245/bart-large-cnn-Text-Summarizer
+
+## Author
+
+Built by [Rick van Veen](https://github.com/rickvanveenI)
+
+- Python backend & AI API
+- FastAPI, OpenAI integration
+
