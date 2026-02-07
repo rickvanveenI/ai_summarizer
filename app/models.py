@@ -1,4 +1,9 @@
+# models.py
 from pydantic import BaseModel
 
+
 class SummarizeRequest(BaseModel):
-    text: str
+	text: str
+
+class SummarizeResponse(BaseModel):
+	summary: str
