@@ -54,4 +54,3 @@ curl -X POST "http://127.0.0.1:8000/summarize" \
 ---
 
 For more details, see the source files in the `app/` directory.
-# ai_summarizer
